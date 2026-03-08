@@ -13,6 +13,9 @@ const nextConfig = {
   basePath,
   assetPrefix: basePath,
   reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 module.exports = nextConfig;

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { BUSINESS, LOCAL_SEO_KEYWORDS } from "@/utils/constants";
+import { withBasePath } from "@/utils/assetPath";
 
 type SeoHeadProps = {
   title: string;
@@ -9,18 +10,23 @@ type SeoHeadProps = {
   includeSchema?: boolean;
 };
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://mir-tailors.github.io";
+const BASE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://mirrmusaibb.github.io").replace(/\/$/, "");
+const EXTERNAL_URL = /^(?:[a-z]+:)?\/\//i;
 
 export const SeoHead = ({ title, description, path = "/", image = "/images/hero-tailoring.svg", includeSchema = true }: SeoHeadProps) => {
-  const canonical = `${BASE_URL}${path}`;
-  const imageUrl = `${BASE_URL}${image}`;
+  const canonicalPath = withBasePath(path);
+  const sitePath = withBasePath("/");
+  const imagePath = withBasePath(image);
+
+  const canonical = `${BASE_URL}${canonicalPath}`;
+  const imageUrl = EXTERNAL_URL.test(image) ? image : `${BASE_URL}${imagePath}`;
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: BUSINESS.name,
     description,
-    url: BASE_URL,
+    url: `${BASE_URL}${sitePath}`,
     telephone: BUSINESS.phoneDisplay,
     address: {
       "@type": "PostalAddress",

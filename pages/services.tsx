@@ -4,6 +4,7 @@ import { PrimaryLink } from "@/components/ui/PrimaryActions";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { useLanguage } from "@/hooks/useLanguage";
+import { withBasePath } from "@/utils/assetPath";
 import { DELIVERY_OPTIONS, PAYMENT_OPTIONS, SERVICES, getLocalizedText } from "@/utils/constants";
 
 export default function ServicesPage() {
@@ -99,7 +100,7 @@ export default function ServicesPage() {
               ))}
             </ul>
             <div className="mt-6 max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-black/30 p-4">
-              <img src="/images/upi-qr-placeholder.svg" alt="UPI QR placeholder" className="h-auto w-full" loading="lazy" />
+              <img src={withBasePath("/images/upi-qr-placeholder.svg")} alt="UPI QR placeholder" className="h-auto w-full" loading="lazy" />
             </div>
           </div>
         </Reveal>
@@ -111,3 +112,5 @@ export default function ServicesPage() {
     </>
   );
 }
+
+

@@ -4,6 +4,7 @@ import { PrimaryLink } from "@/components/ui/PrimaryActions";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { useLanguage } from "@/hooks/useLanguage";
+import { withBasePath } from "@/utils/assetPath";
 import { PORTFOLIO_ITEMS, getLocalizedText } from "@/utils/constants";
 
 export default function PortfolioPage() {
@@ -39,7 +40,7 @@ export default function PortfolioPage() {
                 transition={{ duration: 0.2 }}
                 className="overflow-hidden rounded-3xl border border-white/10 bg-black/30"
               >
-                <img src={item.src} alt={item.title.en} className="h-52 w-full object-cover" loading="lazy" />
+                <img src={withBasePath(item.src)} alt={item.title.en} className="h-52 w-full object-cover" loading="lazy" />
                 <figcaption className={`space-y-1 px-4 py-4 ${isUrdu ? "text-right" : "text-left"}`}>
                   <h3 className={`text-base font-semibold text-stone-100 ${isUrdu ? "font-urdu" : ""}`}>
                     {getLocalizedText(item.title, language)}
@@ -60,3 +61,5 @@ export default function PortfolioPage() {
     </>
   );
 }
+
+

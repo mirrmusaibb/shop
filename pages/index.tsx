@@ -7,6 +7,7 @@ import { PrimaryLink } from "@/components/ui/PrimaryActions";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { useLanguage } from "@/hooks/useLanguage";
+import { withBasePath } from "@/utils/assetPath";
 import {
   ABOUT_CONTENT,
   BUSINESS,
@@ -59,7 +60,7 @@ export default function HomePage() {
             <Reveal delay={0.15}>
               <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }} className="overflow-hidden rounded-3xl border border-white/10 bg-black/30">
                 <img
-                  src="/images/hero-tailoring.svg"
+                  src={withBasePath("/images/hero-tailoring.svg")}
                   alt="Tailoring setup for Mir Tailors"
                   className="h-full w-full object-cover"
                   loading="lazy"
@@ -155,7 +156,7 @@ export default function HomePage() {
           {PORTFOLIO_ITEMS.slice(0, 3).map((item, index) => (
             <Reveal key={item.title.en} delay={index * 0.1}>
               <motion.figure whileHover={{ y: -4 }} className="overflow-hidden rounded-3xl border border-white/10 bg-black/30">
-                <img src={item.src} alt={item.title.en} className="h-56 w-full object-cover" loading="lazy" />
+                <img src={withBasePath(item.src)} alt={item.title.en} className="h-56 w-full object-cover" loading="lazy" />
                 <figcaption className={`space-y-1 px-4 py-4 ${isUrdu ? "text-right" : "text-left"}`}>
                   <h3 className={`text-base font-semibold text-stone-100 ${isUrdu ? "font-urdu" : ""}`}>
                     {getLocalizedText(item.title, language)}
@@ -248,7 +249,7 @@ export default function HomePage() {
               ))}
             </ul>
             <div className="mt-6 max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-black/40 p-4">
-              <img src="/images/upi-qr-placeholder.svg" alt="UPI QR placeholder" className="h-auto w-full" loading="lazy" />
+              <img src={withBasePath("/images/upi-qr-placeholder.svg")} alt="UPI QR placeholder" className="h-auto w-full" loading="lazy" />
             </div>
           </div>
         </Reveal>
@@ -293,4 +294,6 @@ export default function HomePage() {
     </>
   );
 }
+
+
 
