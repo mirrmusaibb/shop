@@ -60,7 +60,7 @@ export default function HomePage() {
             <Reveal delay={0.15}>
               <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }} className="overflow-hidden rounded-3xl border border-white/10 bg-black/30">
                 <img
-                  src={withBasePath("/images/hero-tailoring.svg")}
+                  src={withBasePath("/images/hero-tailoring.png")}
                   alt="Tailoring setup for Mir Tailors"
                   className="h-full w-full object-cover"
                   loading="lazy"
