@@ -1,0 +1,9 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="600" rx="26" fill="#0F1114"/>
+  <rect x="34" y="34" width="532" height="532" rx="22" stroke="#D8B577" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="8 8"/>
+  <rect x="120" y="120" width="360" height="360" rx="18" fill="#151922"/>
+  <rect x="160" y="160" width="280" height="280" rx="10" stroke="#D8B577" stroke-width="2"/>
+  <path d="M180 210H420M180 260H420M180 310H420M180 360H420" stroke="#D8B577" stroke-opacity="0.45"/>
+  <path d="M230 160V440M280 160V440M330 160V440M380 160V440" stroke="#D8B577" stroke-opacity="0.45"/>
+  <text x="300" y="508" text-anchor="middle" fill="#E6CB91" font-size="28" font-family="Manrope, sans-serif">UPI QR PLACEHOLDER</text>
+</svg>

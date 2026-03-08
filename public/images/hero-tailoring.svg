@@ -1,0 +1,23 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0C0E"/>
+      <stop offset="1" stop-color="#1A1D22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="210" y1="100" x2="920" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6CB91" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#C8A05C" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="210" cy="140" r="220" fill="#D8B577" fill-opacity="0.08"/>
+  <circle cx="1100" cy="70" r="180" fill="#D8B577" fill-opacity="0.05"/>
+  <path d="M300 700C360 520 490 450 600 450C710 450 840 520 900 700" stroke="url(#accent)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M520 455V370C520 315 560 285 602 285C644 285 684 315 684 370V455" stroke="url(#accent)" stroke-width="20" stroke-linecap="round"/>
+  <path d="M430 670L503 470" stroke="#E6CB91" stroke-opacity="0.72" stroke-width="10" stroke-linecap="round"/>
+  <path d="M770 670L697 470" stroke="#E6CB91" stroke-opacity="0.72" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="430" cy="672" r="17" fill="#D8B577"/>
+  <circle cx="770" cy="672" r="17" fill="#D8B577"/>
+  <rect x="338" y="740" width="525" height="2" fill="#D8B577" fill-opacity="0.4"/>
+  <text x="120" y="820" fill="#E7D6B2" font-size="44" font-family="Cormorant Garamond, serif" letter-spacing="3">MIR TAILORS</text>
+</svg>

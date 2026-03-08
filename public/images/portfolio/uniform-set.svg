@@ -1,0 +1,26 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101218"/>
+      <stop offset="1" stop-color="#191D24"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="80" x2="800" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6CB91" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#C8A05C" stop-opacity="0.42"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <rect x="36" y="36" width="828" height="628" rx="34" stroke="#D8B577" stroke-opacity="0.24" stroke-width="2"/>
+  <circle cx="114" cy="95" r="84" fill="#D8B577" fill-opacity="0.08"/>
+  <circle cx="810" cy="82" r="62" fill="#D8B577" fill-opacity="0.08"/>
+
+  <path d="M278 500C314 380 397 324 449 324C501 324 584 380 620 500" stroke="url(#accent)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M389 330V255C389 212 418 190 449 190C480 190 509 212 509 255V330" stroke="url(#accent)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M340 495L377 343" stroke="#E6CB91" stroke-opacity="0.8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M558 495L521 343" stroke="#E6CB91" stroke-opacity="0.8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="340" cy="495" r="12" fill="#D8B577"/>
+  <circle cx="558" cy="495" r="12" fill="#D8B577"/>
+
+  <text x="450" y="580" text-anchor="middle" fill="#F0DEB5" font-size="44" font-family="Cormorant Garamond, serif">Uniform Set</text>
+  <text x="450" y="620" text-anchor="middle" fill="#D8B577" font-size="22" font-family="Manrope, sans-serif" letter-spacing="2">Institution Ready</text>
+</svg>
