@@ -25,9 +25,9 @@ export const BUSINESS = {
   phoneDisplay: "+91 00000 00000",
   phoneRaw: "910000000000",
   whatsappNumber: "910000000000",
-  instagramUrl: "https://www.instagram.com/mir.tailors/",
-  address: "Sunsooma Achabal, Jammu & Kashmir, India",
-  city: "Sunsooma Achabal, Kashmir",
+  instagramUrl: "https://www.instagram.com/mirrmusaibb/",
+  address: "Achabal, Jammu & Kashmir, India",
+  city: "Achabal, Kashmir",
   coordinates: {
     lat: 33.6980062543632,
     lng: 75.22158108800498,
@@ -45,7 +45,7 @@ export const NAV_ITEMS: Array<{ href: string; label: LocalizedText }> = [
 
 export const HERO_CONTENT = {
   label: {
-    en: "Sunsooma Achabal | Tailoring Studio",
+    en: "Achabal | Tailoring Studio",
     ur: "سنسومہ اچہ بل | ٹیلرنگ اسٹوڈیو",
   },
   title: {
